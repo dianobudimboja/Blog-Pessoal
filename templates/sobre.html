@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Sobre{% endblock %}
+
+{% block content %}
+    <section style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <h1 style="color: var(--accent-green); margin-bottom: 1.5rem;">Sobre Mim</h1>
+        <div style="background-color: var(--bg-card); padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+            
+            <!-- Foto de perfil (placeholder por enquanto) -->
+            <div style="margin-bottom: 1.5rem;">
+                <img 
+                    src="{{url_for('static', filename='bl2.jpg')}}" 
+                    alt="Economista & Contabilista"
+                    style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-green); box-shadow: 0 0 15px rgba(74, 222, 128, 0.4);">
+            </div>
+
+            <h2 style="font-size: 1.8rem; margin-bottom: 1rem; color: var(--text-light);">Botelho Castro Lupapa</h2>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.7;">
+                Técnico de Contabilidade e Economista. Apaixonado por Números, Finanças e a Arte de transformar Dados em Decisões Estratégicas.  
+                Especializado em Análise Económica, Planeamento Financeiro e Gestão Contabilística, ajudando Empresas e Indivíduos a construírem um Futuro mais sólido e sustentável.
+            </p>
+
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                <a href="https://www.linkedin.com/in/botelho-lupapa-3353a3313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app " style="color: var(--accent-green); text-decoration: none; font-weight: 500; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+                    LinkedIn
+                </a>
+                <span style="color: var(--text-muted);">•</span>
+                <a href="mailto:botelholupapa@gmail.com" style="color: var(--accent-green); text-decoration: none; font-weight: 500; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+                    Email
+                </a>
+                <span style="color: var(--text-muted);">•</span>
+                <a href="https://www.linkedin.com/in/botelho-lupapa-3353a3313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app " style="color: var(--accent-green); text-decoration: none; font-weight: 500; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+                    Portfólio
+                </a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
